@@ -49,5 +49,14 @@
     color: #000000;
     text-align: center;
     width: 10%;
-    padding: 1px;
+    padding: 1vh;
+}
+
+.carbuilder td>button{
+    padding: 1vh;
+    border-radius: 1vh;
+    border: none;
+    text-align: center;
+    color: white;
+    background: #00a6ff;
 }
