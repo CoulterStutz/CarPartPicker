@@ -1,4 +1,38 @@
-.tablewrapper{
+.carbuilder {
+    overflow: auto;
     margin: auto;
-    width: 60%;
+    width: 50%;
+}
+
+.carbuilder table {
+    border: 1px solid #dededf;
+    height: 100%;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-spacing: 0px;
+    text-align: center;
+}
+
+.carbuilder caption {
+    caption-side: top;
+    text-align: left;
+}
+
+.carbuilder th {
+    border: 1px solid #dededf;
+    background-color: #80ccff;
+    color: #000000;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    width: 10%;
+}
+
+.carbuilder td {
+    border: 1px solid #dededf;
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+    width: 10%;
+    padding: 1px;
 }
