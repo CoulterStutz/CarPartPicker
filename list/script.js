@@ -12,7 +12,7 @@ function addRow(selectedComponent) {
                 var cell5 = row.insertCell(4);
 
                 cell1.innerHTML = selectedComponent;
-                cell2.innerHTML = "";
+                cell2.innerHTML = "<button>+</button>";
                 cell3.innerHTML = "";
                 cell4.innerHTML = "";
                 cell5.innerHTML = "";
