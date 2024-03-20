@@ -1,5 +1,7 @@
 function addRow(selectedComponent) {
-    if (!document.getElementById(selectedComponent) && selectedComponent != "") {
+    var existingRows = document.querySelectorAll('tr[id="' + selectedComponent + '"]').length;
+
+    if (selectedComponent !== "" && (selectedComponent !== "Turbocharger" || existingRows < 2)) {
         var table = document.querySelector(".carbuilder tbody");
         var row = table.insertRow(-1);
         row.id = selectedComponent;
