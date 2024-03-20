@@ -1,7 +1,9 @@
 function addRow(selectedComponent) {
     var existingRows = document.querySelectorAll('tr[id="' + selectedComponent + '"]').length;
+    var existingTireRows = document.querySelectorAll('tr[id$="Tires"]').length;
+    var isTireComponent = selectedComponent.endsWith("Tires");
 
-    if (selectedComponent !== "" && (selectedComponent !== "Turbocharger" || existingRows < 2)) {
+    if (selectedComponent !== "" && (selectedComponent !== "Turbocharger" || existingRows < 2) && (!isTireComponent || existingTireRows < 2)) {
         var table = document.querySelector(".carbuilder tbody");
         var row = table.insertRow(-1);
         row.id = selectedComponent;
