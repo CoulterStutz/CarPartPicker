@@ -21,13 +21,19 @@
 <div class="add-parts-dropdown">
     <select name="components" onchange="addRow(this.value)">
         <option value="">Select Component</option>
-        <option value="Engine">Engine</option>
-        <option value="Air Intake">Air Intake</option>
-        <option value="Exhaust">Exhaust</option>
-        <option value="Turbocharger">Turbo/Supercharger</option>
-        <option value="Fuel Injector">Fuel Injector</option>
-        <option value="ECU">ECU</option>
-        <option value="Transmission">Transmission</option>
+        <optgroup label=" "></optgroup>
+        <optgroup label="Engine Parts">
+            <option value="Engine">Engine</option>
+            <option value="AirIntake">Air Intake</option>
+            <option value="Exhaust">Exhaust</option>
+            <option value="Turbocharger">Turbo/Supercharger</option>
+            <option value="FuelInjector">Fuel Injector</option>
+        </optgroup>
+        <optgroup label=" "></optgroup>
+        <optgroup label="Other">
+            <option value="Transmission">Transmission</option>
+            <option value="ECU">ECU</option>
+        </optgroup>
     </select>
 </div>
 
