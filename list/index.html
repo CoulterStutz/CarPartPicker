@@ -1,60 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>CarPartPicker!</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <title>CarPartPicker!</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .add-parts-dropdown {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    </style>
+    <script src="script.js"></script>
+</head>
 
-    <body>
-        <div class="topbar">
-            <a href="/index.html">Home</a>
-        </div>
+<body>
+<div class="topbar">
+    <a href="/index.html">Home</a>
+</div>
 
-        <div class="tablewrapper">
-            <table class="carbuilder">
-                <tbody>
-                <tr>
-                    <th>Component</th>
-                    <th>Selection</th>
-                    <th>Weight</th>
-                    <th>HP</th>
-                    <th>Price</th>
-                </tr>
-                <tr id="Car">
-                    <td class="car">Base Car</td>
-                    <td class="car_selection"><button>+</button></td>
-                    <td class="car_weight"></td>
-                    <td class="car_hp"></td>
-                    <td class="car_price"></td>
-                </tr>
-                <tr id="EngineParts">
-                    <td class="component">Engine Parts</td>
-                    <td class="selection">
-                        <select name="engine_components" onchange="addRow(this.value)">
-                            <option value="">Select Component</option>
-                            <option value="Engine">Engine</option>
-                            <option value="AirIntake">Air Intake</option>
-                            <option value="Exhaust">Exhaust</option>
-                            <option value="Turbocharger">Turbo/Supercharger</option>
-                            <option value="FuelInjector">Fuel Injector</option>
-                            <option value="ECU">ECU</option>
-                        </select>
-                    </td>
-                    <td class="weight"></td>
-                    <td class="hp"></td>
-                    <td class="price"></td>
-                </tr>
-                <tr id="Transmission">
-                    <td class="component">Transmission</td>
-                    <td class="selection"><button>+</button></td>
-                    <td class="weight"></td>
-                    <td class="hp"></td>
-                    <td class="price"></td>
-                </tr>
-                </tbody>
-            </table>
-        </div>
-        <script src="script.js"></script>
-    </body>
+<div class="add-parts-dropdown">
+    <select name="components" onchange="addRow(this.value)">
+        <option value="">Select Component</option>
+        <option value="Engine">Engine</option>
+        <option value="Air Intake">Air Intake</option>
+        <option value="Exhaust">Exhaust</option>
+        <option value="Turbocharger">Turbo/Supercharger</option>
+        <option value="Fuel Injector">Fuel Injector</option>
+        <option value="ECU">ECU</option>
+        <option value="Transmission">Transmission</option>
+    </select>
+</div>
+
+<div class="tablewrapper">
+    <table class="carbuilder">
+        <tbody>
+        <tr>
+            <th>Component</th>
+            <th>Selection</th>
+            <th>Weight</th>
+            <th>HP</th>
+            <th>Price</th>
+        </tr>
+        <tr id="BaseCar">
+            <td class="component">Base Car</td>
+            <td class="selection"><button>+</button></td>
+            <td class="weight"></td>
+            <td class="hp"></td>
+            <td class="price"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
 </html>
